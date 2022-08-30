@@ -39,6 +39,8 @@ body {
 
 .price1 {
     color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 2.5em;
 }
 
 .price2 {
