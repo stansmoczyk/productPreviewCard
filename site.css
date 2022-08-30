@@ -20,6 +20,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 .body {
