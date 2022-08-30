@@ -1,11 +1,19 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cart {
-    background-color: green;
+.textCard {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.buttonCart {
+    background-color: hsl(158, 36%, 37%);
 }
 
 .title {
@@ -20,6 +28,22 @@
     align-items: center;
 }
 
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.price1, .price2 {
+    margin: 5px;
+}
+
+.price1 {
+    color: hsl(158, 36%, 37%);
+}
+
+.price2 {
+    text-decoration: line-through;
+}
 
 img {
     width: 400px;
