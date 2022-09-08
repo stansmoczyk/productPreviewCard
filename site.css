@@ -1,14 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Roboto&display=swap');
 /* 
 font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+
+*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.card{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.image img{
+    max-width: 100%;
+}
+
+
+
+
+
 
 .prices {
     display: flex;
@@ -28,6 +55,3 @@ font-family: 'Roboto', sans-serif; */
     margin: 5px;
 }
 
-img {
-    width: 400px;
-}
