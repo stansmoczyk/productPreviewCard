@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Roboto&display=swap');
-/* 
-font-family: 'Fraunces', serif;
-
-*/
 
 *{
     margin: 0;
@@ -14,6 +10,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -22,20 +22,45 @@ body{
 }
 
 .card{
-    max-width: 700px;
+    max-width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .image img{
     max-width: 100%;
+    display: inherit;
 }
 
+.textCard{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+h6.category{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
 
+.name{
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
 
-
+.description{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
 
 .prices {
     display: flex;
@@ -45,13 +70,47 @@ body{
 
 .current-price {
     color: hsl(158, 36%, 37%);
-    font-weight: 700;
-    font-size: 2.5em;
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
     margin: 5px;
 }
 
 .old-price {
     text-decoration: line-through;
-    margin: 5px;
+    color: hsl(228, 12%, 48%);
+    margin: 10px;
 }
 
+.purchase{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.purchase:hover{
+    background-color: hsl(158, 36%, 25%);
+}
+
+.purchase img{
+    padding-right: 10px;
+
+}
+
+
+@media only screen and (max-width: 628px){
+    .card{
+        grid-template-columns: 1fr;
+    }
+    .image img{
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
